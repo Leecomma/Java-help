@@ -1,4 +1,3 @@
-///Хелпер по Инструкциям 
 package com.company;
     class Demo7{
         public static void main(String [] args)
@@ -7,11 +6,11 @@ package com.company;
             char choice, ignore;
             for (; ;) {
                 do {
-                    System.out.println("Справка: ");
+                    System.out.println("Instruction: ");
                     System.out.println("1. if");
                     System.out.println("2. switch");
-                    System.out.println("Выберите: ");
-                    System.out.println("press q exit");
+                    System.out.println("Choice: ");
+                    System.out.println("Press q exit");
 
                     choice = (char) System.in.read();
                     do {
@@ -23,20 +22,20 @@ package com.company;
 
                 switch (choice) {
                     case '1' -> {
-                        System.out.println("Инструкция if:\n");
-                        System.out.println("if(условие) инструкция;");
-                        System.out.println("else инструкция;");
+                        System.out.println(" Instruction if:\n");
+                        System.out.println(" if(equation) instruction;");
+                        System.out.println(" else instruction;");
                     }
                     case '2' -> {
-                        System.out.println("Инструкция switch:\n");
-                        System.out.println("switch(выражение) {");
-                        System.out.println(" case константа:");
-                        System.out.println(" последовательность инструкций");
-                        System.out.println(" break;");
+                        System.out.println(" Instruction switch:\n");
+                        System.out.println(" Switch(equation) {");
+                        System.out.println(" case constanta:");
+                        System.out.println(" Subsequence instruction");
+                        System.out.println(" Break;");
                         System.out.println(" // ...");
                         System.out.println("}");
                     }
-                    default -> System.out.println("Запрос не найден");
+                    default -> System.out.println("Request not found");
                 }
             }
         }
